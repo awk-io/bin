@@ -1,1 +1,1 @@
-# About
+Developer building backend services, web applications, and automation tools. Interested in distributed systems, cloud infrastructure, and software that scales. Working primarily with Java, Spring Boot, SQL, AWS, and Linux.
