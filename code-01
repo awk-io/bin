@@ -1,0 +1,44 @@
+# Code Dump
+
+A collection of experiments, snippets, and small projects.
+
+## About
+
+This repository serves as a personal code archive for testing ideas, learning new technologies, and keeping useful code in one place.
+
+## Contents
+
+- HTML
+- CSS
+- JavaScript
+- Python
+- Mini Projects
+- Utilities
+- Experiments
+
+## Purpose
+
+- Learn by building
+- Keep code organized
+- Track progress
+- Experiment freely
+
+## Structure
+
+```text
+code-dump/
+├── html/
+├── css/
+├── javascript/
+├── python/
+├── projects/
+└── misc/
+```
+
+## Usage
+
+Browse the folders and run individual files as needed.
+
+## License
+
+MIT
