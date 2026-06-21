@@ -1,31 +1,37 @@
-#!/usr/bin/env python3
+# The [Your Name] Operating System
 
-import os
-import subprocess
-from datetime import datetime
+> *One person. One message. Infinite leverage.*
 
-# CHANGE THIS TO YOUR REPOSITORY PATH
-REPO_PATH = "/path/to/your/repository"
+[![Status: Building in Public](https://img.shields.io/badge/Status-Building_in_Public-black.svg)]()
+[![Focus: 1 Product](https://img.shields.io/badge/Focus-1_Product-black.svg)]()
 
-os.chdir(REPO_PATH)
+---
 
-timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+## The Simple Business Model
 
-with open("activity.log", "a", encoding="utf-8") as f:
-    f.write(f"{timestamp}\n")
+**Simplicity over complexity.**
+**Ownership over rental.**
+**Clarity over confusion.**
 
-commands = [
-    ["git", "add", "activity.log"],
-    ["git", "commit", "-m", f"Daily update {timestamp}"],
-    ["git", "push", "origin", "main"]
-]
+This repository documents the exact structure of my one-person business. 
+No investors. No unnecessary features. Just a direct line from my expertise to the people who need it.
 
-for cmd in commands:
-    result = subprocess.run(cmd, capture_output=True, text=True)
+## The Flywheel
 
-    if result.returncode != 0:
-        print(f"Error running: {' '.join(cmd)}")
-        print(result.stderr)
-        exit(1)
-
-print("Commit and push completed.")
+```text
+         ┌─────────────────────────────────────┐
+         │                                     │
+         ▼                                     │
+   ┌─────────────┐                      ┌─────────────┐
+   │   CONTENT   │ ────────────────────▶ │   AUDIENCE  │
+   │  (Free)     │                      │  (Trust)    │
+   └─────────────┘                      └─────────────┘
+         │                                     │
+         │                                     │
+         ▼                                     ▼
+   ┌─────────────┐                      ┌─────────────┐
+   │   OFFER     │ ◀─────────────────── │   PRODUCT   │
+   │  (Core)     │                      │  (1 Thing)  │
+   └─────────────┘                      └─────────────┘
+         │                                     │
+         └─────────────────────────────────────┘
