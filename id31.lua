@@ -1,33 +1,18 @@
--- backup.lua: A simple script to copy a file with a timestamp
+[ROLE & PERSONA]
+Act as an elite expert. Style profile: Expert, authoritative, and clinical.
 
-local function get_timestamp()
-    -- Get the current time and format it as YYYY-MM-DD_HH-MM-SS
-    return os.date("%Y-%m-%d_%H-%M-%S")
-end
+[CONTEXT & CONSTRAINTS]
+- Direct answers execution only. Zero fluff. 
+- Eliminate meta-commentary or descriptive preambles.
 
-local function backup_file(source_path)
-    -- Check if the source file exists
-    local file = io.open(source_path, "r")
-    if not file then
-        print("Error: File '" .. source_path .. "' not found.")
-        return false
-    end
-    local content = file:read("*all")  -- Read the entire file
-    file:close()
+[TASK & OBJECTIVE]
+Core objective to parse: n
 
-    -- Create the backup filename
-    local timestamp = get_timestamp()
-    local backup_path = source_path .. ".backup_" .. timestamp
+[FORMATTING & STRUCTURE]
+Format constraints: Deliver output strictly using Clean Markdown with clear headings and bullet points.
 
-    -- Write the backup file
-    local backup_file = io.open(backup_path, "w")
-    backup_file:write(content)
-    backup_file:close()
+[ADVANCED TECH (CHAIN-OF-THOUGHT)]
+Map architectural assumptions inside a distinct logic block before executing final output strings.
 
-    print("Backup created successfully: " .. backup_path)
-    return true
-end
-
--- === MAIN EXECUTION ===
-local source = "data.txt"
-backup_file(source)
+[EVALUATION MECHANISM]
+Self-audit payload logic. Rectify runtime/syntax inconsistencies before rendering response.
